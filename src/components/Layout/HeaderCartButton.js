@@ -1,7 +1,8 @@
-import classes from './HeaderCartButton.module.css';
-import CartIcon from '../../Cart/CartIcon';
 import { useContext, useEffect, useState } from 'react';
-import CartContext from '../../../store/CartProvider';
+
+import CartIcon from '../Cart/CartIcon';
+import CartContext from '../../store/cart-context';
+import classes from './HeaderCartButton.module.css';
 
 const HeaderCartButton = (props) => {
   const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
@@ -40,4 +41,5 @@ const HeaderCartButton = (props) => {
     </button>
   );
 };
+
 export default HeaderCartButton;
